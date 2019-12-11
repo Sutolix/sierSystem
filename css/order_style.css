@@ -1,0 +1,29 @@
+#pedir{
+    position: absolute;
+    margin-top: 1%;
+    width: 50%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid;
+}
+
+#pedir h4{
+    text-align: center;
+}
+
+.tabelaPedidos label{
+    font-size: .8em;
+    margin-bottom: 0;
+}
+
+.form-control{
+    height: calc(2.25rem + .3px);
+}
+
+#confirmar{
+    position: absolute;
+    margin-top: 3px;
+    right: 15px;
+}
