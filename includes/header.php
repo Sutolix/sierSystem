@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/home_style.css">
     <link rel="stylesheet" href="css/order_style.css">
     <link rel="stylesheet" href="css/textOrder_style.css">
+    <link rel="stylesheet" href="css/tabelaPedidos_style.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"><!--Arquivo css que permite o uso de vários icones-->
   

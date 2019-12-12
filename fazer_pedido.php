@@ -1,15 +1,16 @@
 <?php
 	//Header
 	include_once 'includes/header.php';
+	include_once 'php_action/calculo.php';
 ?>
 
 <div id="pedir" class="col-sm-4 tabelaPedidos">
     <h4>Pedido</h4>
 
-    <form action="php_action/criar.php" method="POST">
+    <form action="php_action/criar.php" method="POST" id="order">
 
     <label for="nPacotes" class="control-label">Nº de pacotes: </label>
-    <input type="number" id="nPacotes" name="nPacotes" class="form-control" min="5" max="30" />
+    <input type="number" id="nPacotes" name="nPacotes" class="form-control" min="5" max="30" value="5" onblur="multi()"/>
 
     <label for="dataEntrega" class="control-label">Data de entrega: </label>
     <input type="date" id="dataEntrega" name="dataEntrega" class="form-control" />
@@ -21,10 +22,10 @@
     <label for="responsavel" class="control-label">Responsável: </label>
     <input type="text" id="responsavel" name="responsavel" class="form-control" />
 
-    <label for="valorTotal" class="control-label">Valor total: </label>
-    <input type="number" id="valorTotal" name="valorTotal" class="form-control" />
+    <label for="valorTotal" class="control-label">Valor total(R$): </label>
+    <input type="number" id="valorTotal" name="valorTotal" class="form-control" readonly/>
 
-    <input id="confirmar" for="confirmar" type="submit" class="btn-sm btn-success" value="Confirmar">
+    <input id="confirmar" name="confirmar" type="submit" class="btn-sm btn-success" value="Confirmar">
 
     </form>
 </div>

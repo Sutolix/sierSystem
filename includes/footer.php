@@ -3,5 +3,6 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/calculo.js"></script>
   </body>
 </html>
