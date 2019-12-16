@@ -48,3 +48,26 @@
 	include_once 'includes/footer.php'
 
 ?>
+
+
+<div id="modal-pedido">
+    <div class="modal-corpo">
+        <div id="fechar-modal-pedido">x</div>
+        <h1>Confirme os dados do pedido</h1>
+        <p class="modal-pedido-confirmacao">
+            Confirmar pedido de <span id="pedido-pacotes"></span> pacotes,
+            para o dia <span id="pedido-data"></span>,
+            a partir das <span id="pedido-hora"></span> 
+            para a <span id="pedido-padaria"></span>?
+        </p>
+        <p class="modal-pedido-valor">
+            Valor a pagar: <span id="pedido-valor"></span>
+        </p>
+        <button id="enviar-pedido">Ok, é isso mesmo!</button>
+        <p class="modal-pedido-rodape">
+            Responsável pelo pedido: <span id="pedido-responsavel"></span>
+        </p>
+    </div>
+</div>
+
+<script src="./js/pedidos.js"></script>
