@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: green;
+}
+
+body h1, ul, li {
+	font-family: 'Raleway';
+}
+
+body h4 {
+	text-align: center;
+	bottom: 0;
+}
+
+body h1 {
+	text-align: center;
+}
+
+.test {
+	width: 50%;
+	height: 50%;
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.test img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+
+}

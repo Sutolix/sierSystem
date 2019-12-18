@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body, html {
+	height: 100%;
+	min-width: 720px;
+}
+
+body{
+  background-image: url(../img/back.jpg);
+}
+
+#caixa {
+	width: 35%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+}
+
+#caixa p {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 6%;
+	font-size: 2em;
+}
+
+#bot {
+	position: absolute;
+	bottom: 5%;
+}
+
+#bot a {
+	text-decoration: none;
+	color: black;
+}
+
+#bot a:hover {
+	text-decoration: underline;
+}
+
+.row .col.push-m3 {
+	left: 17%;
+}
+
+.row .col.m6 {
+	width: 68%;
+}
+
+.btn {
+	margin-top: 11%;
+}
+
+#cad a {
+	font-family: 'Raleway';
+	font-weight: bold;
+	margin-left: 3%;
+	white-space: nowrap
+}
+
+.disable {
+	background-color: #fd3e3e;
+}
+
+.btn:hover {
+	background-color: #4de8f4;
+}
+
