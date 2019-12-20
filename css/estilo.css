@@ -9,12 +9,16 @@ body, html {
 }
 
 body{
-  background-image: url(../img/back.jpg);
+  background-image: url(../img/fundo.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-origin: padding-box;
+  background-clip: border-box;
 }
 
 #caixa {
-	width: 35%;
-	height: 100%;
+	width: 30%;
+	height: auto;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -70,3 +74,13 @@ body{
 	background-color: #4de8f4;
 }
 
+#loginError{
+	color: red;
+	font-size: 1em !important;
+	font-weight: bold;
+	cursor: context-menu;
+}
+
+#loginError:hover{
+	border-color: silver;
+}

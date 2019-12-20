@@ -1,9 +1,8 @@
 <?php
 	//Header
 	include_once 'includes/header.php';
-	include_once 'php_action/calculo.php';
+	include_once 'js/calculo.php';
 ?>
-
 <div id="pedir" class="col-sm-4 tabelaPedidos">
     <div id="quadform">
     <h4>Pedido</h4>
@@ -74,3 +73,5 @@
 </div>
 
 <script src="./js/pedidos.js"></script>
+<script src="../usuarios/js/scripts.js"></script>
+<script type="text/javascript" src="../usuarios/js/calculo.js"></script>
