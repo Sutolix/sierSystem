@@ -6,15 +6,14 @@
   /* verifica se existe a sessão, se o user não tiver feito o login não será criado a session, 
 	então ao verificar que a session não existe a página redireciona o mesmo para a tela de login.*/
   session_start();
-
-  if (
-    (!isset($_SESSION['nomel']) || empty($_SESSION['nomel'])) ||
-    (!isset($_SESSION['senhal']) || empty($_SESSION['senhal'])))
-    {
-      var_dump($_SEESION); die();
+  if((!isset ($_SESSION['login']) == true) and (!isset ($_SESSION['senha']) == true))
+  {
+    unset($_SESSION['login']);
+    unset($_SESSION['senha']);
+    header('location:../index.php');
     }
 
-  // $logado = $_SESSION['nomel'];
+  // $logado = $_SESSION['login'];
   ?>
 
   <title>Sier System</title>
@@ -46,7 +45,21 @@
   </div>
 
   <div id="estabelecimento">
-    <h4>Padaria São José</h4>
+    <h4>
+      <?php
+      include_once 'php_action/db_connect.php';
+      
+      $sql = "SELECT * FROM logins";
+      $result = mysqli_query($connect, $sql);
+      
+      $dados = mysqli_fetch_array($result);
+
+      $estabele = $dados['nomeEstabelecimento'];
+      echo "$estabele";
+
+
+      ?>
+  </h4>
   </div>
 
   <div id="root"></div>

@@ -22,16 +22,16 @@
 		<div class="col s12 m6 push-m3">
 			<h3 class="light">Login</h3>
 
-			<form action="acessar.php" method="POST">
+			<form action="acessar.php" method="POST" name="formlogin">
 
 				<div class="input_field col s12">
-					<input type="text" name="nomel" id="nomel" required>
-					<label for="nomel">Nome de usuário</label>
+					<input type="text" name="login" id="login" required>
+					<label for="login">Nome de usuário</label>
 				</div>
 
 				<div class="input_field col s12">
-					<input type="text" name="senhal" id="senhal" required>
-					<label for="senhal">Senha</label>
+					<input type="password" name="senha" id="senha" required>
+					<label for="senha">Senha</label>
 				</div>
 
 				<button type="submit" value='acessar' name="acessar" id="acessar" class="btn">Logar</button>
